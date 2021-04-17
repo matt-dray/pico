@@ -58,7 +58,7 @@ demonstrate, we can write the package ‘picopkg’ to a temporary folder.
 ``` r
 pico::create("picopkg", tempdir())
 #> Pico package {picopkg} written to
-#>   /var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T//Rtmp8E9Mkv/picopkg
+#>   /var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T//RtmpdMn66M/picopkg
 ```
 
 The minimum package content has now been created at the specified path.
@@ -83,8 +83,15 @@ Now you can install your package (again with help from {remotes}):
 
 ``` r
 remotes::install_local(file.path(tempdir(), "picopkg"))
-#> Skipping install of 'picopkg' from a local remote, the SHA1 (0.0.9000) has not changed since last install.
-#>   Use `force = TRUE` to force installation
+#>      checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmpdMn66M/file9954db0edb6/picopkg/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmpdMn66M/file9954db0edb6/picopkg/DESCRIPTION’ (355ms)
+#>   ─  preparing ‘picopkg’:
+#>   ✓  checking DESCRIPTION meta-information
+#>   ─  checking for LF line-endings in source and make files and shell scripts
+#>   ─  checking for empty or unneeded directories
+#> ─  creating default NAMESPACE file
+#>   ─  building ‘picopkg_0.0.9000.tar.gz’
+#>    
+#> 
 ```
 
 The functions from your pico package are now available to you. Here’s
