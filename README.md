@@ -76,7 +76,7 @@ pico::create(
  dir = tempdir()
 )
 #> Pico package {mypkg} written to:
-#>   /var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T//RtmplriyXP/mypkg
+#>   /var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T//RtmpikV0Ho/mypkg
 ```
 
 Note that the name will be checked against package-naming standards
@@ -124,7 +124,7 @@ function:
 remotes::install_local(
  path = file.path(tempdir(), "mypkg")
 )
-#>      checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmplriyXP/file16c07c9d14ec/mypkg/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmplriyXP/file16c07c9d14ec/mypkg/DESCRIPTION’
+#>      checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmpikV0Ho/file1c96271a2919/mypkg/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmpikV0Ho/file1c96271a2919/mypkg/DESCRIPTION’
 #>   ─  preparing ‘mypkg’:
 #>   ✓  checking DESCRIPTION meta-information
 #>   ─  checking for LF line-endings in source and make files and shell scripts
@@ -160,7 +160,7 @@ remotes::install_local(
  path = file.path(tempdir(), "mypkg"),
  force = TRUE
 )
-#>      checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmplriyXP/file16c0160d83cc/mypkg/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmplriyXP/file16c0160d83cc/mypkg/DESCRIPTION’
+#>      checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmpikV0Ho/file1c967fd1273a/mypkg/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmpikV0Ho/file1c967fd1273a/mypkg/DESCRIPTION’
 #>   ─  preparing ‘mypkg’:
 #>   ✓  checking DESCRIPTION meta-information
 #>   ─  checking for LF line-endings in source and make files and shell scripts

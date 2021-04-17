@@ -2,21 +2,28 @@
 % Please edit documentation in R/create.R
 \name{create}
 \alias{create}
-\title{Create Pico Package Skeleton}
+\title{Create a Minimal Package Skeleton}
 \usage{
 create(name, dir)
 }
 \arguments{
-\item{name}{Character. Name for the package.}
+\item{name}{Character string, length 1. Name for your package. Alphanumeric
+or period characters only. Can't start with a number nor end with a
+period.}
 
-\item{dir}{Character. Folder location to write the package.}
+\item{dir}{Character string, length 1. Path to the directory where you want
+the package folder to be created.}
 }
 \value{
-Nothing. Directory written or not.
+Nothing. A directory called \code{name} is created or overwritten at
+location \code{dir}.
 }
 \description{
-Generate a directory containing the absolute bare minimum content
-for a package.
+Generate a named directory in a specified location that contains the absolute
+bare minimum content for an R package: a \code{DESCRIPTION} file and an
+\code{R/} folder, which contains a demo \code{functions.R} script file. The
+user will be prompted interactively to overwrite if the directory already
+exists.
 }
 \examples{
 \dontrun{create("mypkg", "~/Desktop")}
