@@ -13,8 +13,14 @@
 create <- function(name, dir) {
 
  # Check input classes
- if (class(name) != "character" | class(dir) != "character") {
-  stop("Arguments must be character strings.")
+ if (class(name) != "character" | class(dir) != "character" |
+     length(name) != 1 | length(dir) != 1) {
+  stop("Arguments must be character strings of length 1.")
+ }
+
+ # Check that directory exists
+ if (!dir.exists(dir)) {
+  stop("That directory doesn't seem to exist.")
  }
 
  # Check package naming rules
@@ -31,7 +37,7 @@ create <- function(name, dir) {
  # Check if directory already exists
  if (dir.exists(dir_pkg)) {
   response <- readline("Directory already exists. Overwrite? y/n: ")
-  if (response == "n") {
+  if (response %in% c("n", "")) {
    stop("Quitting.\n")
   } else if (response == "y") {
    cat("Overwriting.\n")
@@ -63,13 +69,11 @@ create <- function(name, dir) {
  # Add demo function
  writeLines(
   paste0(
-   'say_hi <- function(name) {\n  paste0("Ahoy-hoy ", name, "!")\n}\n'
+   'say_hi <- function(name = "buddy") {\n  paste0("Ahoy-hoy ", name, "!")\n}\n'
   ),
   file.path(dir_r, "functions.R")
  )
 
- cat(
-  paste0("Pico package {", name, "} written to\n  ", dir_pkg, "\n")
-  )
+ cat(paste0("Pico package {", name, "} written to:\n  ", dir_pkg, "\n"))
 
 }
