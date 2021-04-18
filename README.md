@@ -1,6 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+<img src="https://raw.githubusercontent.com/matt-dray/stickers/master/output/pico_hex.png" width="150" align="right">
+
 # pico
 
 <!-- badges: start -->
@@ -12,6 +14,7 @@ proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https:
 [![R-CMD-check](https://github.com/matt-dray/pico/workflows/R-CMD-check/badge.svg)](https://github.com/matt-dray/pico/actions)
 [![Codecov test
 coverage](https://codecov.io/gh/matt-dray/pico/branch/main/graph/badge.svg)](https://codecov.io/gh/matt-dray/pico?branch=main)
+[![CodeFactor](https://www.codefactor.io/repository/github/matt-dray/pico/badge)](https://www.codefactor.io/repository/github/matt-dray/pico)
 <!-- badges: end -->
 
 Create a ‘pico package’: an R package with the minimum required
@@ -76,7 +79,7 @@ pico::create(
  dir = tempdir()
 )
 #> Pico package {mypkg} written to:
-#>   /var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T//RtmpikV0Ho/mypkg
+#>   /var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T//Rtmpx3CGkW/mypkg
 ```
 
 Note that the name will be checked against package-naming standards
@@ -124,7 +127,7 @@ function:
 remotes::install_local(
  path = file.path(tempdir(), "mypkg")
 )
-#>      checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmpikV0Ho/file1c96271a2919/mypkg/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmpikV0Ho/file1c96271a2919/mypkg/DESCRIPTION’
+#>      checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/Rtmpx3CGkW/file2d28381556fa/mypkg/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/Rtmpx3CGkW/file2d28381556fa/mypkg/DESCRIPTION’ (363ms)
 #>   ─  preparing ‘mypkg’:
 #>   ✓  checking DESCRIPTION meta-information
 #>   ─  checking for LF line-endings in source and make files and shell scripts
@@ -160,7 +163,7 @@ remotes::install_local(
  path = file.path(tempdir(), "mypkg"),
  force = TRUE
 )
-#>      checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmpikV0Ho/file1c967fd1273a/mypkg/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/RtmpikV0Ho/file1c967fd1273a/mypkg/DESCRIPTION’
+#>      checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/Rtmpx3CGkW/file2d285581eb42/mypkg/DESCRIPTION’ ...  ✓  checking for file ‘/private/var/folders/y5/ts9sjlt10x1d7qpkgbhy3smh0000gn/T/Rtmpx3CGkW/file2d285581eb42/mypkg/DESCRIPTION’
 #>   ─  preparing ‘mypkg’:
 #>   ✓  checking DESCRIPTION meta-information
 #>   ─  checking for LF line-endings in source and make files and shell scripts

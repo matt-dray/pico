@@ -4,6 +4,8 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+<img src="https://raw.githubusercontent.com/matt-dray/stickers/master/output/pico_hex.png" width="150" align="right">
+
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -30,6 +32,7 @@ or
 proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
 [![R-CMD-check](https://github.com/matt-dray/pico/workflows/R-CMD-check/badge.svg)](https://github.com/matt-dray/pico/actions)
 [![Codecov test coverage](https://codecov.io/gh/matt-dray/pico/branch/main/graph/badge.svg)](https://codecov.io/gh/matt-dray/pico?branch=main)
+[![CodeFactor](https://www.codefactor.io/repository/github/matt-dray/pico/badge)](https://www.codefactor.io/repository/github/matt-dray/pico)
 <!-- badges: end -->
 
 Create a 'pico package': an R package with the minimum required structure and content.
