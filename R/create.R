@@ -32,9 +32,9 @@ create <- function(name, dir) {
 
  # Check package naming rules
  if (!all(grepl("[a-z]|[A-Z]|[0-9]\\.", strsplit(name, "")[[1]])) |
-     grepl("^[0-9]|\\.$", name)) {
+     grepl("^[0-9]|\\.$", name) | nchar(name) < 2) {
   stop(
-   "'name' must be alphanumeric/period characters only.\n",
+   "'name' must be alphanumeric/period only, with at least two characters.\n",
    "Can't start with a number nor end with period.\n"
   )
  }
